@@ -1,0 +1,14 @@
+{
+  "entity_type": "stock-broker",
+  "category": "mid-size",
+  "inputs": {
+    "cii": false,
+    "third_party_soc": true
+  },
+  "tags": [
+    "mid-size",
+    "mid-size-stock-brokers-dps",
+    "stock-brokers",
+    "third-party-soc"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "suite": "ciso-policy",
+  "cases": [
+    {
+      "id": "policy-output-contract",
+      "checks": [
+        {"type": "file_exists", "path": "tests/fixtures/policies/access-control.md"},
+        {
+          "type": "frontmatter_keys",
+          "path": "tests/fixtures/policies/access-control.md",
+          "keys": [
+            "title",
+            "entity",
+            "category",
+            "cscrf_version",
+            "cscrf_standards",
+            "cscrf_guidelines",
+            "generated_date",
+            "review_cycle"
+          ]
+        },
+        {
+          "type": "contains_all",
+          "path": "tests/fixtures/policies/access-control.md",
+          "patterns": [
+            "# Access Control Policy",
+            "## Traceability Matrix",
+            "PR\\.AA\\.G1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "policy-failure-envelope-contract",
+      "checks": [
+        {
+          "type": "contains_all",
+          "path": ".claude/skills/ciso-policy/SKILL.md",
+          "patterns": [
+            "### Framework file missing for requested area",
+            "## Failure Envelope \\(Standardized\\)",
+            "Retry budget: one retry"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "policy-local-task-contracts",
+      "checks": [
+        {
+          "type": "contains_all",
+          "path": ".claude/skills/ciso-policy/references/agents/policy-drafter.md",
+          "patterns": [
+            "# Policy Drafter Task Contract",
+            "## Inputs",
+            "## Output"
+          ]
+        },
+        {
+          "type": "contains_all",
+          "path": ".claude/skills/ciso-policy/references/agents/reviewer.md",
+          "patterns": [
+            "# Policy Reviewer Task Contract",
+            "## Checklist",
+            "PASS"
+          ]
+        }
+      ]
+    }
+  ]
+}

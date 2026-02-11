@@ -1,0 +1,77 @@
+{
+  "suite": "ciso-assess",
+  "cases": [
+    {
+      "id": "assessment-gap-json-contract",
+      "checks": [
+        {"type": "file_exists", "path": "tests/fixtures/ciso-work/gap-analysis.json"},
+        {
+          "type": "json_items_have_fields",
+          "path": "tests/fixtures/ciso-work/gap-analysis.json",
+          "required_fields": [
+            "guideline_id",
+            "function",
+            "mandatory",
+            "status",
+            "reason",
+            "owner_hint",
+            "priority"
+          ],
+          "min_items": 1
+        }
+      ]
+    },
+    {
+      "id": "assessment-review-findings-contract",
+      "checks": [
+        {
+          "type": "contains_all",
+          "path": "tests/fixtures/ciso-work/review-findings.md",
+          "patterns": [
+            "FAIL",
+            "location:",
+            "issue:",
+            "fix:"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assessment-failure-envelope-contract",
+      "checks": [
+        {
+          "type": "contains_all",
+          "path": ".claude/skills/ciso-assess/SKILL.md",
+          "patterns": [
+            "### Policy file not found",
+            "### Topic does not map to any CSCRF area",
+            "## Failure Envelope \\(Standardized\\)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assessment-local-task-contracts",
+      "checks": [
+        {
+          "type": "contains_all",
+          "path": ".claude/skills/ciso-assess/references/agents/analyst.md",
+          "patterns": [
+            "# Assessment Analyst Task Contract",
+            "## Workflow",
+            "## Output"
+          ]
+        },
+        {
+          "type": "contains_all",
+          "path": ".claude/skills/ciso-assess/references/agents/reviewer.md",
+          "patterns": [
+            "# Assessment Reviewer Task Contract",
+            "## Checklist",
+            "PASS"
+          ]
+        }
+      ]
+    }
+  ]
+}

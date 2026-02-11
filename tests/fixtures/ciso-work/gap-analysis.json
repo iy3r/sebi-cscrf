@@ -1,0 +1,20 @@
+[
+  {
+    "guideline_id": "PR.AA.G1",
+    "function": "PROTECT",
+    "mandatory": true,
+    "status": "GAP",
+    "reason": "Policy does not define periodic access-right review cadence.",
+    "owner_hint": "CISO",
+    "priority": "P1"
+  },
+  {
+    "guideline_id": "PR.AA.G2",
+    "function": "PROTECT",
+    "mandatory": true,
+    "status": "NEEDS_REVIEW",
+    "reason": "Draft mentions PIM but lacks system evidence references.",
+    "owner_hint": "Head of IT",
+    "priority": "P2"
+  }
+]

@@ -1,0 +1,15 @@
+[project]
+name = "sebi-cscrf"
+version = "1.0.0"
+description = "Structured extraction of SEBI CSCRF v1.0 with compliance tooling and Claude Code skills"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.14"
+dependencies = [
+    "pyyaml>=6.0,<7",
+]
+
+[project.optional-dependencies]
+eval = [
+    "anthropic>=0.40,<1",
+]

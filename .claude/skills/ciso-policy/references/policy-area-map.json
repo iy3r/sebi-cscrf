@@ -1,0 +1,149 @@
+{
+  "version": "1.1.0",
+  "default_scope": "single-area",
+  "areas": [
+    {
+      "slug": "cybersecurity-policy",
+      "title": "Master Cybersecurity and Cyber Resilience Policy",
+      "aliases": ["master policy", "cybersecurity policy", "security policy"],
+      "primary_cscrf": ["GV.PO", "GV.OC", "GV.OV"],
+      "framework_files": [
+        "framework/governance/gv-po.md",
+        "framework/governance/gv-oc.md",
+        "framework/governance/gv-ov.md"
+      ]
+    },
+    {
+      "slug": "risk-management",
+      "title": "Risk Management Policy",
+      "aliases": ["risk policy", "cyber risk policy"],
+      "primary_cscrf": ["GV.RM", "ID.RA"],
+      "framework_files": [
+        "framework/governance/gv-rm.md",
+        "framework/identify/id-ra.md"
+      ]
+    },
+    {
+      "slug": "roles-responsibilities",
+      "title": "Roles and Responsibilities",
+      "aliases": ["roles policy", "responsibility matrix"],
+      "primary_cscrf": ["GV.RR"],
+      "framework_files": [
+        "framework/governance/gv-rr.md"
+      ]
+    },
+    {
+      "slug": "access-control",
+      "title": "Access Control and Authentication Policy",
+      "aliases": ["iam policy", "authentication policy"],
+      "primary_cscrf": ["PR.AA"],
+      "framework_files": [
+        "framework/protect/pr-aa.md"
+      ]
+    },
+    {
+      "slug": "data-security",
+      "title": "Data Security Policy",
+      "aliases": ["data protection policy", "data privacy policy"],
+      "primary_cscrf": ["PR.DS"],
+      "framework_files": [
+        "framework/protect/pr-ds.md"
+      ]
+    },
+    {
+      "slug": "information-protection",
+      "title": "Information Protection Procedures",
+      "aliases": ["information security procedures", "information handling"],
+      "primary_cscrf": ["PR.IP"],
+      "framework_files": [
+        "framework/protect/pr-ip.md"
+      ]
+    },
+    {
+      "slug": "maintenance",
+      "title": "Maintenance Policy",
+      "aliases": ["system maintenance policy", "patch maintenance"],
+      "primary_cscrf": ["PR.MA"],
+      "framework_files": [
+        "framework/protect/pr-ma.md"
+      ]
+    },
+    {
+      "slug": "training",
+      "title": "Awareness and Training Program",
+      "aliases": ["awareness policy", "security training"],
+      "primary_cscrf": ["PR.AT"],
+      "framework_files": [
+        "framework/protect/pr-at.md"
+      ]
+    },
+    {
+      "slug": "vendor-management",
+      "title": "Vendor and Supply Chain Risk Management",
+      "aliases": ["third-party risk policy", "vendor risk policy"],
+      "primary_cscrf": ["GV.SC"],
+      "framework_files": [
+        "framework/governance/gv-sc.md"
+      ]
+    },
+    {
+      "slug": "security-monitoring",
+      "title": "Security Monitoring and SOC Policy",
+      "aliases": ["soc policy", "monitoring policy"],
+      "primary_cscrf": ["DE.CM"],
+      "framework_files": [
+        "framework/detect/de-cm.md"
+      ]
+    },
+    {
+      "slug": "detection-process",
+      "title": "Detection Process",
+      "aliases": ["detection procedures", "threat detection"],
+      "primary_cscrf": ["DE.DP"],
+      "framework_files": [
+        "framework/detect/de-dp.md"
+      ]
+    },
+    {
+      "slug": "incident-response",
+      "title": "Incident Response Plan",
+      "aliases": ["ir plan", "incident handling"],
+      "primary_cscrf": ["RS.MA", "RS.AN", "RS.CO", "RS.IM"],
+      "framework_files": [
+        "framework/respond/rs-ma.md",
+        "framework/respond/rs-an.md",
+        "framework/respond/rs-co.md",
+        "framework/respond/rs-im.md"
+      ]
+    },
+    {
+      "slug": "recovery-planning",
+      "title": "Recovery and BCP Plan",
+      "aliases": ["dr plan", "bcp policy", "recovery policy"],
+      "primary_cscrf": ["RC.RP", "RC.CO", "RC.IM"],
+      "framework_files": [
+        "framework/recover/rc-rp.md",
+        "framework/recover/rc-co.md",
+        "framework/recover/rc-im.md"
+      ]
+    },
+    {
+      "slug": "resilience-evolution",
+      "title": "Cyber Resilience Evolution Strategy",
+      "aliases": ["resilience strategy", "maturity roadmap"],
+      "primary_cscrf": ["EV.ST"],
+      "framework_files": [
+        "framework/evolve/ev-st.md"
+      ]
+    },
+    {
+      "slug": "asset-management",
+      "title": "Asset Management Policy",
+      "aliases": ["asset inventory policy", "cmdb policy"],
+      "primary_cscrf": ["ID.AM"],
+      "framework_files": [
+        "framework/identify/id-am.md"
+      ]
+    }
+  ]
+}

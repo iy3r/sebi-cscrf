@@ -1,0 +1,99 @@
+{
+  "suite": "ciso",
+  "cases": [
+    {
+      "id": "ciso-frontmatter-contract",
+      "checks": [
+        {
+          "type": "frontmatter_keys",
+          "path": ".claude/skills/ciso/SKILL.md",
+          "keys": [
+            "name",
+            "description",
+            "argument-hint",
+            "allowed-tools",
+            "compatibility"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ciso-failure-envelope-contract",
+      "checks": [
+        {
+          "type": "contains_all",
+          "path": ".claude/skills/ciso/SKILL.md",
+          "patterns": [
+            "## Failure Envelope \\(Standardized\\)",
+            "Retry budget: one retry only",
+            "docs/\\.ciso-work/phase-error\\.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ciso-local-task-contracts",
+      "checks": [
+        {
+          "type": "contains_all",
+          "path": ".claude/skills/ciso/references/agents/analyst.md",
+          "patterns": [
+            "# CSCRF Analyst Task Contract",
+            "## Inputs",
+            "## Output"
+          ]
+        },
+        {
+          "type": "contains_all",
+          "path": ".claude/skills/ciso/references/agents/gap-analyst.md",
+          "patterns": [
+            "# CSCRF Gap Analyst Task Contract",
+            "## Workflow",
+            "guideline_id"
+          ]
+        },
+        {
+          "type": "contains_all",
+          "path": ".claude/skills/ciso/references/agents/policy-drafter.md",
+          "patterns": [
+            "# CSCRF Policy Drafter Task Contract",
+            "## Required Reads",
+            "output_path"
+          ]
+        },
+        {
+          "type": "contains_all",
+          "path": ".claude/skills/ciso/references/agents/reviewer.md",
+          "patterns": [
+            "# CSCRF Reviewer Task Contract",
+            "## Checklist",
+            "PASS"
+          ]
+        },
+        {
+          "type": "contains_all",
+          "path": ".claude/skills/ciso/references/agents/roadmap-planner.md",
+          "patterns": [
+            "# CSCRF Roadmap Planner Task Contract",
+            "30-60-90",
+            "## Output"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ciso-runtime-read-guardrails",
+      "checks": [
+        {
+          "type": "contains_all",
+          "path": ".claude/skills/ciso/SKILL.md",
+          "patterns": [
+            "Read these files before analysis or drafting:",
+            "Development-only checks \\(do not load for normal user workflows\\):",
+            "Never run `cat framework/\\*\\*/\\*\\.md`\\."
+          ]
+        }
+      ]
+    }
+  ]
+}

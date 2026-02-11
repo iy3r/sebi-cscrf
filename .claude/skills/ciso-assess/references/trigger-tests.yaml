@@ -1,0 +1,335 @@
+{
+  "version": "1.0.0",
+  "skills": [
+    "ciso",
+    "ciso-policy",
+    "ciso-assess"
+  ],
+  "cases": [
+    {
+      "id": "ciso-positive-01",
+      "bucket": "positive",
+      "prompt": "Help us get CSCRF compliant before our next audit.",
+      "expected_skill": "ciso"
+    },
+    {
+      "id": "ciso-positive-02",
+      "bucket": "positive",
+      "prompt": "Run a full CSCRF interview and tell us what applies to our RE.",
+      "expected_skill": "ciso"
+    },
+    {
+      "id": "ciso-positive-03",
+      "bucket": "positive",
+      "prompt": "Build a 90-day CSCRF remediation plan after assessing our current controls.",
+      "expected_skill": "ciso"
+    },
+    {
+      "id": "ciso-positive-04",
+      "bucket": "positive",
+      "prompt": "Start with entity profiling, then assess CSCRF gaps for our broker entity.",
+      "expected_skill": "ciso"
+    },
+    {
+      "id": "ciso-positive-05",
+      "bucket": "positive",
+      "prompt": "Act as our virtual CISO and guide us through end-to-end CSCRF compliance.",
+      "expected_skill": "ciso"
+    },
+    {
+      "id": "policy-positive-01",
+      "bucket": "positive",
+      "prompt": "Draft an access-control CSCRF policy for a qualified RE.",
+      "expected_skill": "ciso-policy"
+    },
+    {
+      "id": "policy-positive-02",
+      "bucket": "positive",
+      "prompt": "Generate an incident-response plan for a mid-size broker.",
+      "expected_skill": "ciso-policy"
+    },
+    {
+      "id": "policy-positive-03",
+      "bucket": "positive",
+      "prompt": "Create a vendor-management policy aligned to CSCRF.",
+      "expected_skill": "ciso-policy"
+    },
+    {
+      "id": "policy-positive-04",
+      "bucket": "positive",
+      "prompt": "Regenerate our data-security policy for self-certification category.",
+      "expected_skill": "ciso-policy"
+    },
+    {
+      "id": "policy-positive-05",
+      "bucket": "positive",
+      "prompt": "Write all CSCRF policy documents for our entity one area at a time.",
+      "expected_skill": "ciso-policy"
+    },
+    {
+      "id": "assess-positive-01",
+      "bucket": "positive",
+      "prompt": "Review docs/policies/access-control.md for CSCRF gaps.",
+      "expected_skill": "ciso-assess"
+    },
+    {
+      "id": "assess-positive-02",
+      "bucket": "positive",
+      "prompt": "Score our incident response policy against CSCRF controls.",
+      "expected_skill": "ciso-assess"
+    },
+    {
+      "id": "assess-positive-03",
+      "bucket": "positive",
+      "prompt": "Audit this security policy file and list missing mandatory CSCRF requirements.",
+      "expected_skill": "ciso-assess"
+    },
+    {
+      "id": "assess-positive-04",
+      "bucket": "positive",
+      "prompt": "Evaluate whether our vendor policy has weak language for compliance.",
+      "expected_skill": "ciso-assess"
+    },
+    {
+      "id": "assess-positive-05",
+      "bucket": "positive",
+      "prompt": "Assess this existing policy document, do not draft a new one.",
+      "expected_skill": "ciso-assess"
+    },
+    {
+      "id": "negative-01",
+      "bucket": "negative",
+      "prompt": "Explain zero trust architecture in simple terms.",
+      "expected_skill": "none"
+    },
+    {
+      "id": "negative-02",
+      "bucket": "negative",
+      "prompt": "Write a generic ISO 27001 policy template.",
+      "expected_skill": "none"
+    },
+    {
+      "id": "negative-03",
+      "bucket": "negative",
+      "prompt": "Summarize RBI cybersecurity directions for banks.",
+      "expected_skill": "none"
+    },
+    {
+      "id": "negative-04",
+      "bucket": "negative",
+      "prompt": "What is the weather in Mumbai?",
+      "expected_skill": "none"
+    },
+    {
+      "id": "negative-05",
+      "bucket": "negative",
+      "prompt": "Help me debug a Python recursion error.",
+      "expected_skill": "none"
+    },
+    {
+      "id": "negative-06",
+      "bucket": "negative",
+      "prompt": "Create a marketing copy for our mobile app.",
+      "expected_skill": "none"
+    },
+    {
+      "id": "negative-07",
+      "bucket": "negative",
+      "prompt": "Draft an HR leave and attendance policy.",
+      "expected_skill": "none"
+    },
+    {
+      "id": "negative-08",
+      "bucket": "negative",
+      "prompt": "Prepare a SOC 2 checklist for our SaaS startup.",
+      "expected_skill": "none"
+    },
+    {
+      "id": "negative-09",
+      "bucket": "negative",
+      "prompt": "Translate this paragraph into Hindi.",
+      "expected_skill": "none"
+    },
+    {
+      "id": "negative-10",
+      "bucket": "negative",
+      "prompt": "Generate Terraform for an AWS VPC.",
+      "expected_skill": "none"
+    },
+    {
+      "id": "negative-11",
+      "bucket": "negative",
+      "prompt": "Create a board presentation about quarterly revenue.",
+      "expected_skill": "none"
+    },
+    {
+      "id": "negative-12",
+      "bucket": "negative",
+      "prompt": "Give me interview questions for frontend developers.",
+      "expected_skill": "none"
+    },
+    {
+      "id": "negative-13",
+      "bucket": "negative",
+      "prompt": "Summarize this tenancy agreement PDF.",
+      "expected_skill": "none"
+    },
+    {
+      "id": "negative-14",
+      "bucket": "negative",
+      "prompt": "Recommend a new laptop for coding.",
+      "expected_skill": "none"
+    },
+    {
+      "id": "negative-15",
+      "bucket": "negative",
+      "prompt": "Draft a privacy policy for an ecommerce website.",
+      "expected_skill": "none"
+    },
+    {
+      "id": "paraphrase-ciso-01",
+      "bucket": "paraphrase",
+      "prompt": "Can you run the complete CSCRF compliance journey for us?",
+      "expected_skill": "ciso"
+    },
+    {
+      "id": "paraphrase-ciso-02",
+      "bucket": "paraphrase",
+      "prompt": "We need profiling plus applicability mapping and then a compliance roadmap.",
+      "expected_skill": "ciso"
+    },
+    {
+      "id": "paraphrase-ciso-03",
+      "bucket": "paraphrase",
+      "prompt": "Do a full CSCRF readiness assessment from scratch for our RE.",
+      "expected_skill": "ciso"
+    },
+    {
+      "id": "paraphrase-ciso-04",
+      "bucket": "paraphrase",
+      "prompt": "Act like our CISO and coordinate interview, gaps, and closure plan.",
+      "expected_skill": "ciso"
+    },
+    {
+      "id": "paraphrase-policy-01",
+      "bucket": "paraphrase",
+      "prompt": "Produce only the access control policy text aligned to CSCRF.",
+      "expected_skill": "ciso-policy"
+    },
+    {
+      "id": "paraphrase-policy-02",
+      "bucket": "paraphrase",
+      "prompt": "Create policy docs area-wise, starting with incident response.",
+      "expected_skill": "ciso-policy"
+    },
+    {
+      "id": "paraphrase-policy-03",
+      "bucket": "paraphrase",
+      "prompt": "Regenerate our current cybersecurity policy wording for CSCRF traceability.",
+      "expected_skill": "ciso-policy"
+    },
+    {
+      "id": "paraphrase-assess-01",
+      "bucket": "paraphrase",
+      "prompt": "Review this existing policy and rate compliance coverage.",
+      "expected_skill": "ciso-assess"
+    },
+    {
+      "id": "paraphrase-assess-02",
+      "bucket": "paraphrase",
+      "prompt": "Can you audit this policy file for missing mandatory CSCRF items?",
+      "expected_skill": "ciso-assess"
+    },
+    {
+      "id": "paraphrase-assess-03",
+      "bucket": "paraphrase",
+      "prompt": "Evaluate policy strength and traceability against CSCRF guideline IDs.",
+      "expected_skill": "ciso-assess"
+    },
+    {
+      "id": "boundary-01",
+      "bucket": "boundary",
+      "prompt": "Draft access-control policy from scratch for qualified RE.",
+      "expected_skill": "ciso-policy"
+    },
+    {
+      "id": "boundary-02",
+      "bucket": "boundary",
+      "prompt": "Assess this existing access-control policy and list gaps.",
+      "expected_skill": "ciso-assess"
+    },
+    {
+      "id": "boundary-03",
+      "bucket": "boundary",
+      "prompt": "Profile my entity first and then tell me what policies to draft.",
+      "expected_skill": "ciso"
+    },
+    {
+      "id": "boundary-04",
+      "bucket": "boundary",
+      "prompt": "Generate incident-response policy and then review it for weaknesses.",
+      "expected_skill": "ciso-policy"
+    },
+    {
+      "id": "boundary-05",
+      "bucket": "boundary",
+      "prompt": "Only review the uploaded policy file, do not interview us.",
+      "expected_skill": "ciso-assess"
+    },
+    {
+      "id": "boundary-06",
+      "bucket": "boundary",
+      "prompt": "We want the complete interview, assessment, and 90-day remediation plan.",
+      "expected_skill": "ciso"
+    },
+    {
+      "id": "mixed-intent-01",
+      "bucket": "boundary",
+      "prompt": "Map our controls to both CSCRF and ISO 27001.",
+      "expected_skill": "ciso",
+      "note": "Should trigger ciso with scope caveat about ISO 27001 being out of scope unless explicitly requested"
+    },
+    {
+      "id": "mixed-intent-02",
+      "bucket": "boundary",
+      "prompt": "Review this policy and then fix the gaps.",
+      "expected_skill": "ciso-assess",
+      "note": "Primary intent is assess; fix suggestion is secondary and can be offered as a follow-up"
+    },
+    {
+      "id": "mixed-intent-03",
+      "bucket": "boundary",
+      "prompt": "Check our CSCRF compliance and also prepare for RBI cyber audit.",
+      "expected_skill": "ciso",
+      "note": "Should trigger ciso for CSCRF portion with scope note that RBI framework is not covered"
+    },
+    {
+      "id": "sequential-intent-01",
+      "bucket": "boundary",
+      "prompt": "First assess our access-control policy, then rewrite the weak sections.",
+      "expected_skill": "ciso-assess",
+      "note": "Primary action is assessment; rewrite can follow via ciso-policy after results"
+    },
+    {
+      "id": "ambiguous-01",
+      "bucket": "boundary",
+      "prompt": "Look at our cybersecurity policy.",
+      "expected_skill": "ciso-assess",
+      "note": "Default to assess when intent unclear and an existing document is implied"
+    },
+    {
+      "id": "ambiguous-02",
+      "bucket": "boundary",
+      "prompt": "Help with our CSCRF policy.",
+      "expected_skill": "ciso",
+      "note": "Ambiguous between draft and assess; default to ciso orchestrator which can route appropriately"
+    },
+    {
+      "id": "ambiguous-03",
+      "bucket": "boundary",
+      "prompt": "We need a cybersecurity policy for our depository participant.",
+      "expected_skill": "ciso-policy",
+      "note": "Intent is drafting (need = create); entity type implies qualified or mid-size category"
+    }
+  ]
+}

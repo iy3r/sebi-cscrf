@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CSCRF Gap Analysis Output",
+  "description": "Schema for gap-analysis.json produced by the /ciso skill's gap analyst agent.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["guideline_id", "function", "mandatory", "status", "reason", "priority"],
+    "properties": {
+      "guideline_id": {
+        "type": "string",
+        "pattern": "^[A-Z]{2}\\.[A-Z]{2}\\.G\\d+$",
+        "description": "CSCRF guideline ID (e.g., PR.AA.G1)"
+      },
+      "function": {
+        "type": "string",
+        "enum": ["GOVERN", "IDENTIFY", "PROTECT", "DETECT", "RESPOND", "RECOVER", "EVOLVE"],
+        "description": "CSCRF cybersecurity function"
+      },
+      "mandatory": {
+        "type": "boolean",
+        "description": "true only when CSCRF explicitly states (Mandatory)"
+      },
+      "status": {
+        "type": "string",
+        "enum": ["COMPLIANT", "GAP", "NEEDS_REVIEW"],
+        "description": "Gap classification"
+      },
+      "reason": {
+        "type": "string",
+        "minLength": 10,
+        "description": "Concise explanation of the classification"
+      },
+      "owner_hint": {
+        "type": "string",
+        "description": "Suggested responsible role (e.g., CISO, Head of IT)"
+      },
+      "priority": {
+        "type": "string",
+        "enum": ["P1", "P2", "P3"],
+        "description": "P1=mandatory gap, P2=non-mandatory gap or needs review, P3=minor"
+      }
+    },
+    "additionalProperties": false
+  },
+  "minItems": 1
+}

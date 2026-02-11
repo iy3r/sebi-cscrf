@@ -1,0 +1,18 @@
+.DS_Store
+*.swp
+.env
+dist/
+results/
+.venv/
+
+# Claude Code local settings
+.claude/settings.local.json
+.claude/plugins/
+
+# Compound Engineering plugin artifacts
+docs/brainstorms/
+docs/solutions/
+
+# Skill-generated working artifacts
+docs/.ciso-work/
+docs/policies/
